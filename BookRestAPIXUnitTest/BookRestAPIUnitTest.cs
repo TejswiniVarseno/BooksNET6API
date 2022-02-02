@@ -93,7 +93,7 @@ namespace BookRestAPIXUnitTest
             //Act
             var actionResult = await booksController.PutBook(Id, sampleBook);
             //Assert
-            Assert.Equal("409", ((StatusCodeResult)actionResult).StatusCode.ToString());
+            Assert.Equal("500", ((StatusCodeResult)actionResult).StatusCode.ToString());
 
         }
         [Fact]
