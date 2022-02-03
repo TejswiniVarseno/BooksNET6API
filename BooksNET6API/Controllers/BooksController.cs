@@ -25,7 +25,7 @@ namespace BooksNET6API.Controllers
             {
                 return await bookRepo.GetBooks();
             }
-            catch
+            catch(Exception ex)
             {
                 return StatusCode(500);
             }
