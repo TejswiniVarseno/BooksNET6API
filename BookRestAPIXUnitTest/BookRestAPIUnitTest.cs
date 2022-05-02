@@ -15,7 +15,7 @@ namespace BookRestAPIXUnitTest
     public class BookRestAPIUnitTest
     {
         private BooksController booksController;
-        private int Id = 1;
+        private int Id = 2;
         private readonly Mock<IBookRepo> bookStub = new Mock<IBookRepo>();
         Book sampleBook = new Book
         {
